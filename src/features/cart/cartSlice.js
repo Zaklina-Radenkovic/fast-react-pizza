@@ -66,7 +66,7 @@ export const getTotalCartQuantity = (state) =>
   state.cart.cart.reduce((acc, item) => acc + item.quantity, 0);
 
 export const getTotalCartPrice = (state) =>
-  state.cart.cart.reduce((acc, item) => acc + item.unitPrice, 0);
+  state.cart.cart.reduce((acc, item) => acc + item.totalPrice, 0);
 
 export const getCurrentQuantityById = (id) => (state) =>
   //if that pizza exist we add quantity, if not we return '0'
